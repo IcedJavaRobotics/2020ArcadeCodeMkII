@@ -34,6 +34,12 @@ public class ShooterSubsystem extends SubsystemBase {
 
   }
 
+  public void revStop() {
+
+    shooterSparkA.set(0);
+    shooterSparkB.set(0);
+  }
+
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
